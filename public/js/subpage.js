@@ -45,8 +45,13 @@
       grid.appendChild(card);
     });
 
-    // 계좌
-    C.renderAccounts(document.querySelector('.accounts-wrap'), `${roleLabel}측 계좌번호`, p.accounts);
+    // 계좌 — 비어 있으면 섹션 숨김
+    const accWrap = document.querySelector('.accounts-wrap');
+    if (p.accounts && p.accounts.length) {
+      C.renderAccounts(accWrap, `${roleLabel}측 계좌번호`, p.accounts);
+    } else {
+      accWrap.closest('section').style.display = 'none';
+    }
   }
 
   if (page === 'location') {

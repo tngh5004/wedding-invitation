@@ -75,10 +75,16 @@
     noticeList.appendChild(li);
   });
 
-  // 계좌
+  // 계좌 — 양쪽 모두 비어 있으면 섹션 숨김
   const accWrap = document.querySelector('.accounts-wrap');
-  C.renderAccounts(accWrap, '신랑측 계좌번호', groom.accounts);
-  C.renderAccounts(accWrap, '신부측 계좌번호', bride.accounts);
+  const groomAcc = groom.accounts || [];
+  const brideAcc = bride.accounts || [];
+  if (groomAcc.length || brideAcc.length) {
+    if (groomAcc.length) C.renderAccounts(accWrap, '신랑측 계좌번호', groomAcc);
+    if (brideAcc.length) C.renderAccounts(accWrap, '신부측 계좌번호', brideAcc);
+  } else {
+    accWrap.closest('section').style.display = 'none';
+  }
 
   // RSVP / 방명록 — Apps Script URL(api.baseUrl) 미설정 시 섹션 숨김
   const apiBase = data.api && data.api.baseUrl;
