@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>모바일 청첩장</title>
+<meta name="description" content="저희 결혼식에 초대합니다">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="frame">
+
+  <!-- 1. 커버 -->
+  <section class="cover">
+    <img src="" alt="웨딩 대표 사진" fetchpriority="high">
+    <div class="cover-text">
+      <div class="cover-names">
+        <span class="cover-groom"></span><span class="amp">♥</span><span class="cover-bride"></span>
+      </div>
+      <div class="cover-date" style="white-space: pre-line;"></div>
+    </div>
+  </section>
+
+  <!-- 2. 인사말 -->
+  <section class="fade-in">
+    <div class="section-label">INVITATION</div>
+    <h2 class="section-title greeting-title"></h2>
+    <p class="greeting-body"></p>
+    <div class="parents-line">
+      <div class="parents-groom"></div>
+      <div class="parents-bride"></div>
+    </div>
+    <div class="person-links">
+      <a href="groom.html">신랑측 소개</a>
+      <a href="bride.html">신부측 소개</a>
+    </div>
+  </section>
+
+  <!-- 3. D-day & 캘린더 -->
+  <section class="fade-in">
+    <div class="section-label">SAVE THE DATE</div>
+    <h2 class="section-title">예식 일시</h2>
+    <div class="calendar"></div>
+    <div class="dday-wrap"></div>
+  </section>
+
+  <!-- 4. 갤러리 -->
+  <section class="fade-in">
+    <div class="section-label">GALLERY</div>
+    <h2 class="section-title">우리의 순간들</h2>
+    <div class="gallery-grid"></div>
+  </section>
+
+  <!-- 5. 동영상 -->
+  <section class="video-section fade-in">
+    <div class="section-label">VIDEO</div>
+    <h2 class="section-title">웨딩 영상</h2>
+    <div class="video-wrap">
+      <video controls preload="metadata" playsinline muted></video>
+    </div>
+  </section>
+
+  <!-- 6. 오시는 길 요약 -->
+  <section class="fade-in">
+    <div class="section-label">LOCATION</div>
+    <h2 class="section-title">오시는 길</h2>
+    <div class="venue-info">
+      <div class="venue-name"></div>
+      <div class="venue-addr"></div>
+      <div class="venue-tel"><a href=""></a></div>
+    </div>
+    <div class="map-sketch"><img src="" alt="약도" loading="lazy"></div>
+    <div class="map-links"></div>
+    <ul class="transport-list"></ul>
+    <a class="more-link" href="location.html">오시는 길 상세 안내 →</a>
+  </section>
+
+  <!-- 7. 예식 안내/공지 -->
+  <section class="fade-in">
+    <div class="section-label">INFORMATION</div>
+    <h2 class="section-title">예식 안내</h2>
+    <ul class="notice-list"></ul>
+  </section>
+
+  <!-- 8. 마음 전하실 곳 -->
+  <section class="fade-in">
+    <div class="section-label">THANKS TO</div>
+    <h2 class="section-title">마음 전하실 곳</h2>
+    <div class="accounts-wrap"></div>
+  </section>
+
+  <!-- 9. RSVP -->
+  <section class="fade-in">
+    <div class="section-label">RSVP</div>
+    <h2 class="section-title">참석 여부를 알려주세요</h2>
+    <form id="rsvp-form" class="form-card" autocomplete="off">
+      <div class="form-row">
+        <label>어느 분의 하객이신가요?</label>
+        <div class="seg">
+          <input type="radio" name="side" value="groom" id="side-groom" required>
+          <label for="side-groom">신랑측</label>
+          <input type="radio" name="side" value="bride" id="side-bride">
+          <label for="side-bride">신부측</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <label>참석 여부</label>
+        <div class="seg">
+          <input type="radio" name="attending" value="yes" id="att-yes" required>
+          <label for="att-yes">참석</label>
+          <input type="radio" name="attending" value="no" id="att-no">
+          <label for="att-no">불참</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="rsvp-name">성함</label>
+        <input type="text" id="rsvp-name" name="name" maxlength="20" required placeholder="성함을 입력해주세요">
+      </div>
+      <div class="form-row">
+        <label for="rsvp-count">동행 인원 (본인 포함)</label>
+        <input type="number" id="rsvp-count" name="guest_count" min="1" max="20" value="1">
+      </div>
+      <div class="form-row">
+        <label>식사 여부</label>
+        <div class="seg">
+          <input type="radio" name="meal" value="식사함" id="meal-yes">
+          <label for="meal-yes">식사함</label>
+          <input type="radio" name="meal" value="식사안함" id="meal-no">
+          <label for="meal-no">식사 안 함</label>
+          <input type="radio" name="meal" value="미정" id="meal-tbd">
+          <label for="meal-tbd">미정</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="rsvp-phone">연락처 (선택)</label>
+        <input type="tel" id="rsvp-phone" name="phone" maxlength="20" placeholder="010-0000-0000">
+      </div>
+      <div class="hp-field">
+        <label for="rsvp-website">홈페이지</label>
+        <input type="text" id="rsvp-website" name="website" tabindex="-1" autocomplete="off">
+      </div>
+      <button type="submit" class="submit-btn">참석 여부 보내기</button>
+      <div class="form-msg"></div>
+    </form>
+  </section>
+
+  <!-- 10. 방명록 -->
+  <section class="fade-in">
+    <div class="section-label">GUESTBOOK</div>
+    <h2 class="section-title">방명록</h2>
+    <form id="gb-form" class="form-card" autocomplete="off">
+      <div class="form-row">
+        <label for="gb-name">성함</label>
+        <input type="text" id="gb-name" name="name" maxlength="20" required placeholder="성함을 입력해주세요">
+      </div>
+      <div class="form-row">
+        <label for="gb-message">축하 메시지</label>
+        <textarea id="gb-message" name="message" maxlength="500" required placeholder="따뜻한 축하의 말을 남겨주세요"></textarea>
+      </div>
+      <div class="hp-field">
+        <label for="gb-website">홈페이지</label>
+        <input type="text" id="gb-website" name="website" tabindex="-1" autocomplete="off">
+      </div>
+      <button type="submit" class="submit-btn">메시지 남기기</button>
+      <div class="form-msg"></div>
+    </form>
+    <div class="gb-list"></div>
+    <button class="gb-more" style="display:none">더 보기</button>
+  </section>
+
+  <!-- 11. 엔딩 -->
+  <section class="ending fade-in">
+    <img src="" alt="엔딩 사진" loading="lazy">
+    <p class="ending-msg"></p>
+  </section>
+
+  <div class="footer"></div>
+</div>
+
+<script src="js/config-loader.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/map.js"></script>
+<script src="js/rsvp.js"></script>
+<script src="js/guestbook.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
