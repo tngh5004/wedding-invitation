@@ -47,19 +47,13 @@ window.WeddingMap = (() => {
     });
   }
 
+  // transport: [{label, body}] 배열 — 배열 순서대로 표시
   function renderTransport(container, transport) {
-    const items = [
-      ['지하철', transport.subway],
-      ['버스', transport.bus],
-      ['자가용', transport.car],
-      ['주차', transport.parking],
-      ['셔틀', transport.shuttle],
-    ];
-    items.forEach(([label, body]) => {
-      if (!body) return;
+    (transport || []).forEach((t) => {
+      if (!t || !t.label || !t.body) return;
       const li = document.createElement('li');
-      li.appendChild(el('span', 't-label', label));
-      li.appendChild(el('span', 't-body', body));
+      li.appendChild(el('span', 't-label', t.label));
+      li.appendChild(el('span', 't-body', t.body));
       container.appendChild(li);
     });
   }
