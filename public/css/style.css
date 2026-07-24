@@ -132,10 +132,23 @@ section + section { border-top: 1px solid var(--line); }
 .dday-count .num { font-size: 30px; font-weight: 700; font-variant-numeric: tabular-nums; }
 .dday-count .lbl { font-size: 16.5px; color: var(--ink-soft); }
 
-/* ===== 갤러리 ===== */
-.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
-.gallery-grid img {
-  width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 6px; cursor: pointer;
+/* ===== 갤러리 — 확대 1장 + 1×3 썸네일 윈도우 ===== */
+.gallery-main img {
+  width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 10px; cursor: pointer;
+  user-select: none; -webkit-user-select: none;
+}
+.gallery-strip { overflow: hidden; margin-top: 8px; }
+/* 트랙 폭 = 창의 5/3 (5칸) — translateX 20% = 정확히 1칸 이동 */
+.gallery-track { display: flex; width: 166.6667%; will-change: transform; }
+.gallery-track .gt-item {
+  flex: 0 0 20%; padding: 0 3px; cursor: pointer;
+}
+.gallery-track img {
+  width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 6px;
+  opacity: .5; transition: opacity .3s; user-select: none; -webkit-user-select: none;
+}
+.gallery-track .gt-item.active img {
+  opacity: 1; outline: 2px solid var(--accent); outline-offset: -2px;
 }
 
 /* 라이트박스 */

@@ -33,8 +33,8 @@
   W.renderCalendar(document.querySelector('.calendar'), wedding.date);
   W.startDday(document.querySelector('.dday-wrap'), wedding.date, `${groom.name} ♥ ${bride.name}`);
 
-  // 갤러리
-  window.WeddingGallery.render(document.querySelector('.gallery-grid'), data.gallery);
+  // 갤러리 (확대 1장 + 1×3 스와이프 윈도우)
+  window.WeddingGallery.render(document.querySelector('.gallery-carousel'), data.gallery);
 
   // 동영상 (src 없으면 섹션 숨김) — IntersectionObserver 로 lazy 주입
   const videoSection = document.querySelector('.video-section');
