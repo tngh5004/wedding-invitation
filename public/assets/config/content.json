@@ -35,7 +35,26 @@
       "deceased": false,
       "phone": "010-3333-4444"
     },
-    "accounts": []
+    "accounts": [
+      {
+        "holder": "김수호",
+        "bank": "국민은행",
+        "number": "123-45-6789-012",
+        "kakaopay": ""
+      },
+      {
+        "holder": "김아버지",
+        "bank": "신한은행",
+        "number": "110-234-567890",
+        "kakaopay": ""
+      },
+      {
+        "holder": "이어머니",
+        "bank": "우리은행",
+        "number": "1002-345-678901",
+        "kakaopay": ""
+      }
+    ]
   },
   "bride": {
     "name": "홍소연",
@@ -54,7 +73,26 @@
       "deceased": false,
       "phone": "010-7777-8888"
     },
-    "accounts": []
+    "accounts": [
+      {
+        "holder": "홍소연",
+        "bank": "카카오뱅크",
+        "number": "3333-01-2345678",
+        "kakaopay": ""
+      },
+      {
+        "holder": "홍아버지",
+        "bank": "하나은행",
+        "number": "123-456789-01234",
+        "kakaopay": ""
+      },
+      {
+        "holder": "최어머니",
+        "bank": "농협은행",
+        "number": "301-2345-6789-01",
+        "kakaopay": ""
+      }
+    ]
   },
   "cover": {
     "photo": "assets/images/cover.jpg"
