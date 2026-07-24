@@ -6,11 +6,8 @@
 
   document.title = `${groom.name} ♥ ${bride.name} 결혼합니다`;
 
-  // 커버
-  document.querySelector('.cover img').src = data.cover.photo;
-  C.setText('.cover-groom', groom.name);
-  C.setText('.cover-bride', bride.name);
-  C.setText('.cover-date', `${wedding.dateDisplay}\n${[wedding.venue.name, wedding.venue.hall].filter(Boolean).join(' ')}`);
+  // 커버 (텍스트는 이미지로 대체됨 — scripts/generate-cover-text.py 로 재생성)
+  document.querySelector('.cover > img').src = data.cover.photo;
 
   // 인사말
   C.setText('.greeting-title', greeting.title);
