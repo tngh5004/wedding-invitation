@@ -57,7 +57,7 @@ for i, (text, size, color, spacing) in enumerate(LINES):
     offset_x = (WIDTH - width) / 2
     for d, gx, ch in paths:
         # 글리프 좌표계(y 위가 +, unitsPerEm) → SVG 픽셀 좌표(y 아래가 +)
-        fill = '#b08a8f' if ch == '♥' else color  # 하트는 사이트 accent 색
+        fill = 'hotpink' if ch == '♥' else color  # 하트는 핫핑크
         parts.append(
             f'<path transform="translate({offset_x + gx:.1f},{baseline:.1f}) scale({scale:.6f},{-scale:.6f})" '
             f'fill="{fill}" d="{d}"/>'
