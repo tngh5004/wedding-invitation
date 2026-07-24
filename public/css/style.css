@@ -46,7 +46,7 @@ section + section { border-top: 1px solid var(--line); }
 
 .section-label {
   text-align: center;
-  font-size: 18px;
+  font-size: 27px;
   letter-spacing: .35em;
   color: var(--accent);
   text-transform: uppercase;
