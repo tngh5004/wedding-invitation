@@ -14,6 +14,8 @@ app.use(helmet({
   contentSecurityPolicy: {
     directives: {
       defaultSrc: ["'self'"],
+      // Apps Script(RSVP/방명록) 호출 허용 — exec는 googleusercontent로 리다이렉트됨
+      connectSrc: ["'self'", 'https://script.google.com', 'https://script.googleusercontent.com'],
       imgSrc: ["'self'", 'data:'],
       mediaSrc: ["'self'"],
       scriptSrc: ["'self'"],

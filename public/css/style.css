@@ -82,8 +82,17 @@ section + section { border-top: 1px solid var(--line); }
   color: var(--ink-soft);
   font-size: 15px;
 }
-.parents-line { margin-top: 28px; text-align: center; font-size: 15px; }
-.parents-line .rel { color: var(--ink-soft); font-size: 13px; margin: 0 4px; }
+/* 혼주 라인 — [부모(우측정렬)] [관계] [이름(좌측정렬)] 3열 그리드
+   → 두 줄의 부모 수가 달라도 신랑/신부 이름이 같은 세로선에 정렬됨 */
+.parents-line {
+  margin-top: 28px; font-size: 15px;
+  display: grid; grid-template-columns: auto auto auto;
+  justify-content: center; align-items: baseline;
+  column-gap: 8px; row-gap: 10px;
+}
+.parents-line .p-parents { text-align: right; }
+.parents-line .p-rel { color: var(--ink-soft); font-size: 13px; text-align: center; }
+.parents-line .p-name { text-align: left; font-weight: 600; }
 .person-links { margin-top: 20px; display: flex; justify-content: center; gap: 12px; }
 .person-links a {
   padding: 8px 18px;
@@ -270,6 +279,7 @@ section + section { border-top: 1px solid var(--line); }
 }
 .parents-photo img { border-radius: 12px; margin-bottom: 18px; }
 .parents-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.parents-grid.single { grid-template-columns: minmax(0, 60%); justify-content: center; }
 .parent-card {
   text-align: center; background: var(--card); border: 1px solid var(--line);
   border-radius: 10px; padding: 16px 10px;

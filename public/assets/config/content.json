@@ -20,20 +20,20 @@
   },
   "groom": {
     "name": "김수호",
-    "phone": "010-1234-5678",
+    "phone": "010-9472-1254",
     "photo": "assets/images/groom/profile.jpg",
     "order": "장남",
     "intro": "밝고 성실한 신랑입니다.\n평생 한 사람만 바라보며 살겠습니다.",
     "parentsPhoto": "assets/images/groom/parents.jpg",
     "father": {
-      "name": "김아버지",
+      "name": "김용철",
       "deceased": false,
-      "phone": "010-1111-2222"
+      "phone": ""
     },
     "mother": {
-      "name": "이어머니",
+      "name": "송윤순",
       "deceased": false,
-      "phone": "010-3333-4444"
+      "phone": ""
     },
     "accounts": [
       {
@@ -43,13 +43,13 @@
         "kakaopay": ""
       },
       {
-        "holder": "김아버지",
+        "holder": "김용철",
         "bank": "신한은행",
         "number": "110-234-567890",
         "kakaopay": ""
       },
       {
-        "holder": "이어머니",
+        "holder": "송윤순",
         "bank": "우리은행",
         "number": "1002-345-678901",
         "kakaopay": ""
@@ -58,20 +58,15 @@
   },
   "bride": {
     "name": "홍소연",
-    "phone": "010-5678-1234",
+    "phone": "010-7176-5813",
     "photo": "assets/images/bride/profile.jpg",
     "order": "장녀",
     "intro": "따뜻한 마음을 가진 신부입니다.\n서로 아끼며 예쁘게 살겠습니다.",
     "parentsPhoto": "assets/images/bride/parents.jpg",
-    "father": {
-      "name": "홍아버지",
-      "deceased": false,
-      "phone": "010-5555-6666"
-    },
     "mother": {
-      "name": "최어머니",
+      "name": "김수영",
       "deceased": false,
-      "phone": "010-7777-8888"
+      "phone": ""
     },
     "accounts": [
       {
@@ -81,13 +76,7 @@
         "kakaopay": ""
       },
       {
-        "holder": "홍아버지",
-        "bank": "하나은행",
-        "number": "123-456789-01234",
-        "kakaopay": ""
-      },
-      {
-        "holder": "최어머니",
+        "holder": "김수영",
         "bank": "농협은행",
         "number": "301-2345-6789-01",
         "kakaopay": ""

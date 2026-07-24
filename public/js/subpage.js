@@ -30,7 +30,9 @@
     parentsPhoto.src = p.parentsPhoto;
     parentsPhoto.alt = `${roleLabel}측 혼주`;
     const grid = document.querySelector('.parents-grid');
-    [['father', '아버지'], ['mother', '어머니']].forEach(([key, rel]) => {
+    const parentDefs = [['father', '아버지'], ['mother', '어머니']].filter(([key]) => p[key] && p[key].name);
+    if (parentDefs.length === 1) grid.classList.add('single');
+    parentDefs.forEach(([key, rel]) => {
       const parent = p[key];
       const card = C.el('div', 'parent-card');
       card.appendChild(C.el('div', 'parent-rel', `${roleLabel}측 ${rel}`));

@@ -16,14 +16,20 @@
   C.setText('.greeting-title', greeting.title);
   C.setText('.greeting-body', greeting.body);
 
-  // 혼주 라인 (故 표기 처리)
-  function parentsLine(p, role) {
-    const f = p.father.deceased ? `故 ${p.father.name}` : p.father.name;
-    const m = p.mother.deceased ? `故 ${p.mother.name}` : p.mother.name;
-    return `${f} · ${m} 의 ${p.order} ${p.name}`;
+  // 혼주 라인 — 3열 그리드(부모/관계/이름)로 신랑·신부 이름을 같은 세로선에 정렬
+  const parentsWrap = document.querySelector('.parents-line');
+  parentsWrap.innerHTML = '';
+  function parentsRow(p) {
+    const names = [p.father, p.mother]
+      .filter((x) => x && x.name)
+      .map((x) => (x.deceased ? `故 ${x.name}` : x.name))
+      .join(' · ');
+    parentsWrap.appendChild(C.el('span', 'p-parents', names));
+    parentsWrap.appendChild(C.el('span', 'p-rel', `의 ${p.order}`));
+    parentsWrap.appendChild(C.el('span', 'p-name', p.name));
   }
-  C.setText('.parents-groom', parentsLine(groom));
-  C.setText('.parents-bride', parentsLine(bride));
+  parentsRow(groom);
+  parentsRow(bride);
 
   // 캘린더 + D-day
   const W = window.WeddingCountdown;

@@ -17,8 +17,8 @@ window.WeddingRsvp = (() => {
         attending: fd.get('attending'),
         name: fd.get('name'),
         guest_count: Number(fd.get('guest_count') || 1),
-        meal: fd.get('meal') || '',
-        phone: fd.get('phone') || '',
+        phone: fd.get('phone') || '', // 시트의 '연락처' 열에 '소속' 값이 저장됨
+
         website: fd.get('website') || '', // honeypot
       };
 
