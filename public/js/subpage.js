@@ -66,7 +66,7 @@
     telA.href = `tel:${v.tel}`;
     document.querySelector('.map-sketch img').src = data.mapSketch;
     window.WeddingMap.renderLinks(document.querySelector('.map-links'), v);
-    window.WeddingMap.renderTransport(document.querySelector('.transport-list'), data.transport);
+    window.WeddingMap.renderTransport(document.querySelector('.transport-list'), data.transport, true);
 
     // 주소 복사
     const copyBtn = document.querySelector('.addr-copy');

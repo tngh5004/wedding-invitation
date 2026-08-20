@@ -47,10 +47,12 @@ window.WeddingMap = (() => {
     });
   }
 
-  // transport: [{label, body}] 배열 — 배열 순서대로 표시
-  function renderTransport(container, transport) {
+  // transport: [{label, body, detailOnly?}] 배열 — 배열 순서대로 표시
+  // detailOnly 항목은 상세 페이지(showDetail=true)에서만 표시
+  function renderTransport(container, transport, showDetail) {
     (transport || []).forEach((t) => {
       if (!t || !t.label || !t.body) return;
+      if (t.detailOnly && !showDetail) return;
       const li = document.createElement('li');
       li.appendChild(el('span', 't-label', t.label));
       li.appendChild(el('span', 't-body', t.body));

@@ -193,7 +193,8 @@ section + section { border-top: 1px solid var(--line); }
   display: inline-block; min-width: 64px; color: var(--accent); font-weight: 600; font-size: 19.5px;
 }
 .transport-list .t-body { white-space: pre-line; color: var(--ink-soft); display: block; margin-top: 2px; }
-.more-link { display: block; text-align: center; margin-top: 20px; color: var(--accent); font-size: 21px; }
+.transport-note { text-align: center; margin-top: 20px; color: var(--ink-soft); font-size: 19.5px; }
+.more-link { display: block; text-align: center; margin-top: 8px; color: var(--accent); font-size: 21px; }
 
 /* ===== 공지/안내 ===== */
 .notice-list li {
