@@ -10,7 +10,6 @@
 | 경로 | 설명 |
 |---|---|
 | `public/index.html` | 메인 싱글 스크롤 — 커버(사진+이미지화된 문구) · 인사말/혼주 · D-day 캘린더 · 갤러리 · 오시는길 · 예식안내 · 계좌 · 방명록 |
-| `public/groom.html` / `bride.html` | 신랑측/신부측 소개 — 프로필·연락 버튼·혼주(통합 사진+성함 카드)·계좌 |
 | `public/location.html` | 오시는 길 상세 — 약도, 카카오맵/네이버지도/티맵 앱 딥링크, 교통 안내 |
 
 ## 주요 구현 사항
@@ -27,12 +26,12 @@
 
 ```
 ├── public/                        # GitHub Pages 배포 대상 (Actions가 이 폴더만 배포)
-│   ├── index.html / groom.html / bride.html / location.html
+│   ├── index.html / location.html
 │   ├── css/{reset.css, style.css}
 │   ├── js/
 │   │   ├── config-loader.js       # content.json 로드 + 공용 유틸(계좌 아코디언 등)
 │   │   ├── main.js                # 메인 페이지 렌더 오케스트레이션
-│   │   ├── subpage.js             # 신랑/신부/오시는길 서브 페이지 렌더
+│   │   ├── subpage.js             # 오시는길 서브 페이지 렌더
 │   │   ├── countdown.js           # D-day 캘린더/카운트다운
 │   │   ├── gallery.js             # 갤러리 캐러셀 + 라이트박스
 │   │   ├── map.js                 # 지도 앱 딥링크 + 교통편 렌더
