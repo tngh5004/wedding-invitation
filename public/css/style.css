@@ -77,7 +77,7 @@ section + section { border-top: 1px solid var(--line); }
 
 /* ===== 커버 ===== */
 .cover { padding: 0; position: relative; }
-.cover > img { width: 100%; aspect-ratio: 3/4; object-fit: cover; }
+.cover > img { width: 100%; aspect-ratio: 3/4; object-fit: cover; object-position: 72% center; }
 .cover-text {
   text-align: center;
   background: var(--card);
