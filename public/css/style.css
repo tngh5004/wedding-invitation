@@ -1,10 +1,24 @@
 /* ===== 모바일 청첩장 공통 스타일 ===== */
 
-/* 나눔손글씨 느릿느릿체 (네이버 클로바 무료 배포) — 안드로이드/iOS/데스크톱 공통 적용 웹폰트 */
+/* 마루부리 (네이버 무료 배포 세리프체) — 안드로이드/iOS/데스크톱 공통 적용 웹폰트 */
 @font-face {
-  font-family: "Nanum NeuRisNeuRisCe";
-  src: url("../assets/fonts/NanumNeuRisNeuRisCe.woff2") format("woff2");
-  font-weight: normal;
+  font-family: "MaruBuri";
+  src: url("../assets/fonts/MaruBuri-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MaruBuri";
+  src: url("../assets/fonts/MaruBuri-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MaruBuri";
+  src: url("../assets/fonts/MaruBuri-Bold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -17,8 +31,8 @@
   --accent: #7f9678;       /* 세이지 그린 */
   --accent-soft: #eef2ec;
   --line: #e4e8e1;
-  --serif: "Nanum NeuRisNeuRisCe", "Apple SD Gothic Neo", "Noto Serif KR", "Nanum Myeongjo", serif;
-  --sans: "Nanum NeuRisNeuRisCe", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  --serif: "MaruBuri", "Noto Serif KR", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
+  --sans: "MaruBuri", "Noto Serif KR", "Nanum Myeongjo", "Apple SD Gothic Neo", serif;
 }
 
 html { scroll-behavior: smooth; }

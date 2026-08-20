@@ -1,5 +1,5 @@
 # 커버 텍스트 이미지 생성
-# 웹폰트(느릿느릿체) 다운로드 전에도 첫 화면 문구가 손글씨체로 보이도록,
+# 웹폰트(마루부리) 다운로드 전에도 첫 화면 문구가 같은 글씨체로 보이도록,
 # 폰트 글리프 패스를 추출해 이미지(SVG)로 만든다.
 # 실행: python3 scripts/generate-cover-text.py && node scripts/svg-to-png.js
 import os
@@ -7,7 +7,7 @@ from fontTools.ttLib import TTFont
 from fontTools.pens.svgPathPen import SVGPathPen
 
 ROOT = os.path.join(os.path.dirname(__file__), '..')
-FONT = os.path.join(ROOT, 'public/assets/fonts/NanumNeuRisNeuRisCe.woff2')
+FONT = os.path.join(ROOT, 'public/assets/fonts/MaruBuri-SemiBold.woff2')
 OUT_SVG = os.path.join(ROOT, 'public/assets/images/cover-text.svg')
 
 # (텍스트, 폰트크기(px, @2x), 색상, 자간(em))
