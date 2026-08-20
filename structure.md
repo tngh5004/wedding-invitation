@@ -9,7 +9,7 @@
 
 | 경로 | 설명 |
 |---|---|
-| `public/index.html` | 메인 싱글 스크롤 — 커버(사진+이미지화된 문구) · 인사말/혼주 · D-day 캘린더 · 갤러리 · 오시는길 · 예식안내 · 계좌 · RSVP · 방명록 |
+| `public/index.html` | 메인 싱글 스크롤 — 커버(사진+이미지화된 문구) · 인사말/혼주 · D-day 캘린더 · 갤러리 · 오시는길 · 예식안내 · 계좌 · 방명록 |
 | `public/groom.html` / `bride.html` | 신랑측/신부측 소개 — 프로필·연락 버튼·혼주(통합 사진+성함 카드)·계좌 |
 | `public/location.html` | 오시는 길 상세 — 약도, 카카오맵/네이버지도/티맵 앱 딥링크, 교통 안내 |
 
@@ -21,7 +21,6 @@
 - **혼주 표기**: 인사말의 혼주 라인은 3열 그리드로, 신랑/신부 이름이 같은 세로선에 정렬. 신부측은 어머니만 표시.
 - **지도 딥링크**: 모바일에서 카카오맵/네이버지도/티맵 앱을 스킴으로 열고, 앱 미설치·데스크톱은 웹 지도로 자동 폴백.
 - **교통편**: `content.json`의 `transport` 배열 순서대로 표시 — 웨딩홀 셔틀버스(수원역) → 부산 대절버스(괴정역, 문의 010-4004-0467) → 주차.
-- **RSVP 폼**: 신랑측/신부측, 참석 여부, 성함, 동행 인원, 소속(선택 — 친구/친척/직장동료).
 - **글자 크기**: 전체 1.5배 확대 적용(본문 기본 24px, 섹션 라벨 27px 등).
 
 ## 파일 구조
@@ -68,7 +67,8 @@
 1. **문구/이름/계좌/일시/교통**: `public/assets/config/content.json` 수정 → 푸시 (약 1분 내 자동 배포)
 2. **커버 문구**: `scripts/generate-cover-text.py`의 `LINES` 수정 → `python3 scripts/generate-cover-text.py` 실행 → 푸시
 3. **사진**: `public/assets/images/`의 같은 파일명에 실사진 덮어쓰기, 또는 `media-original/`에 원본을 넣고 `node scripts/optimize-images.js`
-   - 플레이스홀더 번호: 1=커버, 2=신랑, 3=신부, 4=신랑측 혼주, 5=신부측 혼주, 6=약도, 7~18=갤러리 1~12
+   - 이미지 번호: 01=커버(공유 썸네일 겸용, 갤러리 마지막에 재사용), 02~09=갤러리 8장, 11=약도 (모두 png)
+   - 프로필/혼주 사진: groom/, bride/ 폴더 (profile.jpg, parents.jpg)
 4. **동영상**: 파일당 100MB 제한 — 압축 후 `content.json`의 `video.src` 지정 (비우면 섹션 숨김)
    ```bash
    ffmpeg -i 원본.mov -c:v libx264 -crf 26 -vf "scale=-2:1080" -c:a aac -movflags +faststart public/assets/video/main.mp4

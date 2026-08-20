@@ -84,64 +84,52 @@
     ]
   },
   "cover": {
-    "photo": "assets/images/cover.jpg"
+    "photo": "assets/images/01.png"
   },
   "gallery": [
     {
-      "src": "assets/images/gallery/01.jpg",
+      "src": "assets/images/02.png",
       "alt": "갤러리 사진 1"
     },
     {
-      "src": "assets/images/gallery/02.jpg",
+      "src": "assets/images/03.png",
       "alt": "갤러리 사진 2"
     },
     {
-      "src": "assets/images/gallery/03.jpg",
+      "src": "assets/images/04.png",
       "alt": "갤러리 사진 3"
     },
     {
-      "src": "assets/images/gallery/04.jpg",
+      "src": "assets/images/05.png",
       "alt": "갤러리 사진 4"
     },
     {
-      "src": "assets/images/gallery/05.jpg",
+      "src": "assets/images/06.png",
       "alt": "갤러리 사진 5"
     },
     {
-      "src": "assets/images/gallery/06.jpg",
+      "src": "assets/images/07.png",
       "alt": "갤러리 사진 6"
     },
     {
-      "src": "assets/images/gallery/07.jpg",
+      "src": "assets/images/08.png",
       "alt": "갤러리 사진 7"
     },
     {
-      "src": "assets/images/gallery/08.jpg",
+      "src": "assets/images/09.png",
       "alt": "갤러리 사진 8"
     },
     {
-      "src": "assets/images/gallery/09.jpg",
+      "src": "assets/images/01.png",
       "alt": "갤러리 사진 9"
-    },
-    {
-      "src": "assets/images/gallery/10.jpg",
-      "alt": "갤러리 사진 10"
-    },
-    {
-      "src": "assets/images/gallery/11.jpg",
-      "alt": "갤러리 사진 11"
-    },
-    {
-      "src": "assets/images/gallery/12.jpg",
-      "alt": "갤러리 사진 12"
     }
   ],
   "video": {
     "src": "",
-    "poster": "assets/images/cover.jpg",
+    "poster": "assets/images/01.png",
     "title": "웨딩 영상"
   },
-  "mapSketch": "assets/images/map-sketch.jpg",
+  "mapSketch": "assets/images/11.png",
   "transport": [
     {
       "label": "웨딩홀 셔틀버스 (수원역)",
@@ -168,6 +156,6 @@
   ],
   "ending": {
     "message": "저희 두 사람의 새로운 시작을\n축복해 주셔서 감사합니다.",
-    "photo": "assets/images/gallery/12.jpg"
+    "photo": "assets/images/01.png"
   }
 }

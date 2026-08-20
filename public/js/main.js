@@ -89,10 +89,9 @@
     accWrap.closest('section').style.display = 'none';
   }
 
-  // RSVP / 방명록 — Apps Script URL(api.baseUrl) 미설정 시 섹션 숨김
+  // 방명록 — Apps Script URL(api.baseUrl) 미설정 시 섹션 숨김
   const apiBase = data.api && data.api.baseUrl;
   if (apiBase) {
-    window.WeddingRsvp.init(document.querySelector('#rsvp-form'), apiBase);
     window.WeddingGuestbook.init(
       document.querySelector('#gb-form'),
       document.querySelector('.gb-list'),
@@ -100,7 +99,6 @@
       apiBase
     );
   } else {
-    document.querySelector('#rsvp-form').closest('section').style.display = 'none';
     document.querySelector('#gb-form').closest('section').style.display = 'none';
   }
 

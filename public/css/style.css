@@ -10,13 +10,13 @@
 }
 
 :root {
-  --bg: #faf7f4;
+  --bg: #fcfdfb;           /* 순백에 가까운 화이트 */
   --card: #ffffff;
-  --ink: #3d3a37;
-  --ink-soft: #7a736c;
-  --accent: #b08a8f;       /* 로즈 */
-  --accent-soft: #f5e6e8;
-  --line: #eae4de;
+  --ink: #31352f;          /* 차분한 차콜 */
+  --ink-soft: #7d837a;
+  --accent: #7f9678;       /* 세이지 그린 */
+  --accent-soft: #eef2ec;
+  --line: #e4e8e1;
   --serif: "Nanum NeuRisNeuRisCe", "Apple SD Gothic Neo", "Noto Serif KR", "Nanum Myeongjo", serif;
   --sans: "Nanum NeuRisNeuRisCe", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
 }
@@ -25,7 +25,7 @@ html { scroll-behavior: smooth; }
 body {
   font-family: var(--sans);
   font-size: 24px; /* 기본 16px의 1.5배 — 개별 지정이 없는 텍스트에 적용 */
-  background: #efeae5;
+  background: #eceee9;
   color: var(--ink);
   line-height: 1.7;
   word-break: keep-all;
