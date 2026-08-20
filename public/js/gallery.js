@@ -141,6 +141,11 @@ window.WeddingGallery = (() => {
     mainImg.addEventListener('click', () => lbOpen(current));
     addSwipe(container.querySelector('.gallery-main'));   // 확대 이미지에서도 스와이프 가능
     addSwipe(container.querySelector('.gallery-strip'));
+    // 좌우 방향선(클릭으로도 넘기기)
+    const prevBtn = container.querySelector('.gh-prev');
+    const nextBtn = container.querySelector('.gh-next');
+    if (prevBtn) prevBtn.addEventListener('click', () => move(-1));
+    if (nextBtn) nextBtn.addEventListener('click', () => move(1));
     renderTrack();
   }
 

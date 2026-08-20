@@ -12,14 +12,14 @@ OUT_SVG = os.path.join(ROOT, 'public/assets/images/cover-text.svg')
 
 # (텍스트, 폰트크기(px, @2x), 색상, 자간(em))
 LINES = [
-    ('김수호♥홍소연', 69, '#31352f', 0.10),
-    ('두 사람, 결혼합니다', 58, '#31352f', 0.06),
+    ('김수호 ♥ 홍소연의', 69, '#31352f', 0.10),
+    ('결혼식에 초대합니다', 58, '#31352f', 0.06),
     ('2026년 12월 19일 토요일 낮 12시', 50, '#7d837a', 0.02),
     ('경기교총웨딩하우스', 50, '#7d837a', 0.02),
 ]
 WIDTH = 860           # frame 430px 의 2배 (레티나)
 PAD_TOP, PAD_BOTTOM = 70, 84
-GAP = [80, 80, 18]    # 줄 사이 간격 — 이름/결혼멘트/날짜 사이는 빈 줄 하나만큼 띄움
+GAP = [22, 80, 18]    # 줄1-2 기본 간격, 결혼멘트-날짜 사이만 빈 줄 하나
 
 font = TTFont(FONT)
 cmap = font.getBestCmap()
@@ -58,7 +58,7 @@ for i, (text, size, color, spacing) in enumerate(LINES):
     offset_x = (WIDTH - width) / 2
     for d, gx, ch in paths:
         # 글리프 좌표계(y 위가 +, unitsPerEm) → SVG 픽셀 좌표(y 아래가 +)
-        fill = 'hotpink' if ch == '♥' else color  # 하트는 핫핑크
+        fill = color  # 하트 포함 전체 글자색 통일
         parts.append(
             f'<path transform="translate({offset_x + gx:.1f},{baseline:.1f}) scale({scale:.6f},{-scale:.6f})" '
             f'fill="{fill}" d="{d}"/>'

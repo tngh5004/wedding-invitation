@@ -165,6 +165,13 @@ section + section { border-top: 1px solid var(--line); }
 .gallery-track .gt-item.active img {
   opacity: 1; outline: 2px solid var(--accent); outline-offset: -2px;
 }
+/* 좌우 넘기기 유도 방향선 */
+.gallery-hint { display: flex; align-items: center; gap: 18px; margin-top: 12px; padding: 0 4px; }
+.gallery-hint .gh-side {
+  flex: 1; display: flex; align-items: center; gap: 10px; padding: 6px 0; cursor: pointer;
+}
+.gallery-hint .gh-line { flex: 1; height: 1px; background: var(--accent); opacity: .35; }
+.gallery-hint .gh-arrow { color: var(--accent); font-size: 20px; line-height: 1; }
 
 /* 라이트박스 */
 .lightbox {
