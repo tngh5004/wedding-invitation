@@ -19,7 +19,7 @@ LINES = [
 ]
 WIDTH = 860           # frame 430px 의 2배 (레티나)
 PAD_TOP, PAD_BOTTOM = 70, 84
-GAP = [22, 30, 18]    # 줄 사이 간격
+GAP = [80, 80, 18]    # 줄 사이 간격 — 이름/결혼멘트/날짜 사이는 빈 줄 하나만큼 띄움
 
 font = TTFont(FONT)
 cmap = font.getBestCmap()
