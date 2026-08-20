@@ -38,7 +38,7 @@
 html { scroll-behavior: smooth; }
 body {
   font-family: var(--sans);
-  font-size: 24px; /* 기본 16px의 1.5배 — 개별 지정이 없는 텍스트에 적용 */
+  font-size: 19.2px; /* 기본 크기 — 개별 지정이 없는 텍스트에 적용 */
   background: #eceee9;
   color: var(--ink);
   line-height: 1.7;
@@ -60,7 +60,7 @@ section + section { border-top: 1px solid var(--line); }
 
 .section-label {
   text-align: center;
-  font-size: 27px;
+  font-size: 21.6px;
   letter-spacing: .35em;
   color: var(--accent);
   text-transform: uppercase;
@@ -69,7 +69,7 @@ section + section { border-top: 1px solid var(--line); }
 .section-title {
   text-align: center;
   font-family: var(--serif);
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 600;
   margin-bottom: 28px;
 }
@@ -84,29 +84,29 @@ section + section { border-top: 1px solid var(--line); }
 .cover-text-img { width: 100%; display: block; }
 .cover-names {
   font-family: var(--serif);
-  font-size: 36px;
+  font-size: 28.8px;
   letter-spacing: .1em;
 }
-.cover-names .amp { color: var(--accent); margin: 0 10px; font-size: 27px; }
-.cover-date { margin-top: 10px; color: var(--ink-soft); font-size: 21px; }
+.cover-names .amp { color: var(--accent); margin: 0 10px; font-size: 21.6px; }
+.cover-date { margin-top: 10px; color: var(--ink-soft); font-size: 16.8px; }
 
 /* ===== 인사말 ===== */
 .greeting-body {
   text-align: center;
   white-space: pre-line;
   color: var(--ink-soft);
-  font-size: 22.5px;
+  font-size: 18px;
 }
 /* 혼주 라인 — [부모(우측정렬)] [관계] [이름(좌측정렬)] 3열 그리드
    → 두 줄의 부모 수가 달라도 신랑/신부 이름이 같은 세로선에 정렬됨 */
 .parents-line {
-  margin-top: 28px; font-size: 22.5px;
+  margin-top: 28px; font-size: 18px;
   display: grid; grid-template-columns: auto auto auto;
   justify-content: center; align-items: baseline;
   column-gap: 8px; row-gap: 10px;
 }
 .parents-line .p-parents { text-align: right; }
-.parents-line .p-rel { color: var(--ink-soft); font-size: 19.5px; text-align: center; }
+.parents-line .p-rel { color: var(--ink-soft); font-size: 15.6px; text-align: center; }
 .parents-line .p-name { text-align: left; font-weight: 600; }
 .person-links { margin-top: 20px; display: flex; justify-content: center; gap: 12px; }
 .person-links a {
@@ -114,16 +114,16 @@ section + section { border-top: 1px solid var(--line); }
   border: 1px solid var(--accent);
   color: var(--accent);
   border-radius: 999px;
-  font-size: 19.5px;
+  font-size: 15.6px;
 }
 
 /* ===== 캘린더 / D-day ===== */
 .calendar { max-width: 320px; margin: 0 auto; }
-.calendar-title { text-align: center; font-family: var(--serif); font-size: 25.5px; margin-bottom: 16px; }
+.calendar-title { text-align: center; font-family: var(--serif); font-size: 20.4px; margin-bottom: 16px; }
 .calendar table { width: 100%; border-collapse: collapse; text-align: center; }
-.calendar th { font-size: 18px; color: var(--ink-soft); font-weight: 500; padding: 6px 0; }
+.calendar th { font-size: 14.4px; color: var(--ink-soft); font-weight: 500; padding: 6px 0; }
 .calendar th.sun, .calendar td.sun { color: #c25b5b; }
-.calendar td { padding: 8px 0; font-size: 21px; }
+.calendar td { padding: 8px 0; font-size: 16.8px; }
 .calendar td.wedding-day {
   position: relative; color: #fff; font-weight: 700;
 }
@@ -135,16 +135,16 @@ section + section { border-top: 1px solid var(--line); }
 }
 .calendar td.wedding-day { z-index: 0; }
 .dday {
-  margin-top: 24px; text-align: center; font-size: 22.5px;
+  margin-top: 24px; text-align: center; font-size: 18px;
 }
-.dday b { color: var(--accent); font-size: 27px; }
+.dday b { color: var(--accent); font-size: 21.6px; }
 .dday-count { display: flex; justify-content: center; gap: 10px; margin-top: 14px; }
 .dday-count .unit {
   background: var(--card); border: 1px solid var(--line); border-radius: 10px;
   width: 62px; padding: 10px 0; text-align: center;
 }
-.dday-count .num { font-size: 30px; font-weight: 700; font-variant-numeric: tabular-nums; }
-.dday-count .lbl { font-size: 16.5px; color: var(--ink-soft); }
+.dday-count .num { font-size: 24px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.dday-count .lbl { font-size: 13.2px; color: var(--ink-soft); }
 
 /* ===== 갤러리 — 확대 1장 + 1×3 썸네일 윈도우 ===== */
 .gallery-main img {
@@ -175,68 +175,68 @@ section + section { border-top: 1px solid var(--line); }
 .lightbox.open { display: flex; }
 .lightbox img { max-width: 100%; max-height: 82dvh; object-fit: contain; }
 .lightbox-close {
-  position: absolute; top: 16px; right: 16px; color: #fff; font-size: 45px; line-height: 1;
+  position: absolute; top: 16px; right: 16px; color: #fff; font-size: 36px; line-height: 1;
   padding: 8px;
 }
 .lightbox-nav {
   position: absolute; top: 50%; transform: translateY(-50%);
-  color: rgba(255,255,255,.85); font-size: 51px; padding: 16px 12px;
+  color: rgba(255,255,255,.85); font-size: 40.8px; padding: 16px 12px;
 }
 .lightbox-nav.prev { left: 4px; }
 .lightbox-nav.next { right: 4px; }
-.lightbox-counter { color: #cfcfcf; margin-top: 14px; font-size: 19.5px; }
+.lightbox-counter { color: #cfcfcf; margin-top: 14px; font-size: 15.6px; }
 
 /* ===== 동영상 ===== */
 .video-wrap video { width: 100%; border-radius: 10px; background: #000; }
 
 /* ===== 오시는 길 ===== */
 .venue-info { text-align: center; margin-bottom: 20px; }
-.venue-name { font-family: var(--serif); font-size: 27px; font-weight: 600; }
-.venue-addr { color: var(--ink-soft); font-size: 21px; margin-top: 6px; }
-.venue-tel a { color: var(--accent); font-size: 21px; }
+.venue-name { font-family: var(--serif); font-size: 21.6px; font-weight: 600; }
+.venue-addr { color: var(--ink-soft); font-size: 16.8px; margin-top: 6px; }
+.venue-tel a { color: var(--accent); font-size: 16.8px; }
 .map-sketch img { border-radius: 10px; border: 1px solid var(--line); }
 .map-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 14px; }
 .map-links a {
-  text-align: center; padding: 10px 0; border-radius: 8px; font-size: 19.5px;
+  text-align: center; padding: 10px 0; border-radius: 8px; font-size: 15.6px;
   background: var(--card); border: 1px solid var(--line);
 }
 .transport-list { margin-top: 24px; }
-.transport-list li { padding: 14px 0; border-bottom: 1px dashed var(--line); font-size: 21px; }
+.transport-list li { padding: 14px 0; border-bottom: 1px dashed var(--line); font-size: 16.8px; }
 .transport-list li:last-child { border-bottom: none; }
 .transport-list .t-label {
-  display: inline-block; min-width: 64px; color: var(--accent); font-weight: 600; font-size: 19.5px;
+  display: inline-block; min-width: 64px; color: var(--accent); font-weight: 600; font-size: 15.6px;
 }
 .transport-list .t-body { white-space: pre-line; color: var(--ink-soft); display: block; margin-top: 2px; }
-.transport-note { text-align: center; margin-top: 20px; color: var(--ink-soft); font-size: 19.5px; }
-.more-link { display: block; text-align: center; margin-top: 8px; color: var(--accent); font-size: 21px; }
+.transport-note { text-align: center; margin-top: 20px; color: var(--ink-soft); font-size: 15.6px; }
+.more-link { display: block; text-align: center; margin-top: 8px; color: var(--accent); font-size: 16.8px; }
 
 /* ===== 공지/안내 ===== */
 .notice-list li {
   background: var(--card); border: 1px solid var(--line); border-radius: 10px;
   padding: 16px 18px; margin-bottom: 10px;
 }
-.notice-list .n-title { font-weight: 600; font-size: 21px; margin-bottom: 4px; color: var(--accent); }
-.notice-list .n-body { font-size: 21px; color: var(--ink-soft); white-space: pre-line; }
+.notice-list .n-title { font-weight: 600; font-size: 16.8px; margin-bottom: 4px; color: var(--accent); }
+.notice-list .n-body { font-size: 16.8px; color: var(--ink-soft); white-space: pre-line; }
 
 /* ===== 계좌 (마음 전하실 곳) ===== */
 .account-group { margin-bottom: 14px; }
 .account-toggle {
   width: 100%; display: flex; justify-content: space-between; align-items: center;
-  background: var(--accent-soft); border-radius: 10px; padding: 14px 18px; font-size: 22.5px;
+  background: var(--accent-soft); border-radius: 10px; padding: 14px 18px; font-size: 18px;
   color: var(--ink);
 }
-.account-toggle .arrow { transition: transform .25s; font-size: 18px; color: var(--ink-soft); }
+.account-toggle .arrow { transition: transform .25s; font-size: 14.4px; color: var(--ink-soft); }
 .account-group.open .arrow { transform: rotate(180deg); }
 .account-items { display: none; padding: 6px 4px 0; }
 .account-group.open .account-items { display: block; }
 .account-item {
   display: flex; justify-content: space-between; align-items: center;
   background: var(--card); border: 1px solid var(--line); border-radius: 8px;
-  padding: 12px 14px; margin-top: 8px; font-size: 21px;
+  padding: 12px 14px; margin-top: 8px; font-size: 16.8px;
 }
-.account-item .holder { color: var(--ink-soft); font-size: 18px; }
+.account-item .holder { color: var(--ink-soft); font-size: 14.4px; }
 .copy-btn {
-  padding: 6px 12px; border-radius: 6px; background: var(--accent); color: #fff; font-size: 18px;
+  padding: 6px 12px; border-radius: 6px; background: var(--accent); color: #fff; font-size: 14.4px;
   flex-shrink: 0; margin-left: 10px;
 }
 .copy-btn.copied { background: #8aa17c; }
@@ -246,26 +246,26 @@ section + section { border-top: 1px solid var(--line); }
   background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px;
 }
 .form-row { margin-bottom: 14px; }
-.form-row label { display: block; font-size: 19.5px; color: var(--ink-soft); margin-bottom: 6px; }
+.form-row label { display: block; font-size: 15.6px; color: var(--ink-soft); margin-bottom: 6px; }
 .form-row input[type="text"], .form-row input[type="tel"], .form-row input[type="number"],
 .form-row textarea, .form-row select {
   width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px;
-  background: var(--bg); font-size: 22.5px;
+  background: var(--bg); font-size: 18px;
 }
 .form-row textarea { min-height: 88px; resize: vertical; }
 .seg { display: flex; gap: 8px; }
 .seg input { display: none; }
 .seg label {
   flex: 1; text-align: center; padding: 10px 0; border: 1px solid var(--line); border-radius: 8px;
-  font-size: 21px; color: var(--ink-soft); margin: 0; cursor: pointer;
+  font-size: 16.8px; color: var(--ink-soft); margin: 0; cursor: pointer;
 }
 .seg input:checked + label { background: var(--accent); border-color: var(--accent); color: #fff; }
 .submit-btn {
   width: 100%; padding: 13px 0; background: var(--accent); color: #fff; border-radius: 10px;
-  font-size: 22.5px; font-weight: 600;
+  font-size: 18px; font-weight: 600;
 }
 .submit-btn:disabled { opacity: .5; }
-.form-msg { text-align: center; font-size: 19.5px; margin-top: 10px; min-height: 1.4em; }
+.form-msg { text-align: center; font-size: 15.6px; margin-top: 10px; min-height: 1.4em; }
 .form-msg.ok { color: #6f8f61; }
 .form-msg.err { color: #c25b5b; }
 .hp-field { position: absolute; left: -9999px; opacity: 0; pointer-events: none; }
@@ -276,16 +276,16 @@ section + section { border-top: 1px solid var(--line); }
   background: var(--card); border: 1px solid var(--line); border-radius: 10px;
   padding: 14px 16px; margin-bottom: 10px;
 }
-.gb-head { display: flex; justify-content: space-between; font-size: 19.5px; margin-bottom: 4px; }
+.gb-head { display: flex; justify-content: space-between; font-size: 15.6px; margin-bottom: 4px; }
 .gb-name { font-weight: 600; }
-.gb-date { color: var(--ink-soft); font-size: 18px; }
-.gb-msg { font-size: 21px; color: var(--ink-soft); white-space: pre-line; }
-.gb-more { display: block; margin: 6px auto 0; color: var(--accent); font-size: 21px; padding: 8px 20px; }
+.gb-date { color: var(--ink-soft); font-size: 14.4px; }
+.gb-msg { font-size: 16.8px; color: var(--ink-soft); white-space: pre-line; }
+.gb-more { display: block; margin: 6px auto 0; color: var(--accent); font-size: 16.8px; padding: 8px 20px; }
 
 /* ===== 엔딩 ===== */
 .ending { text-align: center; padding-bottom: 40px; }
 .ending img { border-radius: 10px; margin-bottom: 20px; }
-.ending-msg { white-space: pre-line; color: var(--ink-soft); font-size: 22.5px; }
+.ending-msg { white-space: pre-line; color: var(--ink-soft); font-size: 18px; }
 .footer { text-align: center; padding: 20px 0 36px; color: #b6ada4; font-size: 18px; }
 
 /* ===== 서브 페이지 (신랑/신부/오시는길) ===== */
@@ -295,15 +295,15 @@ section + section { border-top: 1px solid var(--line); }
   background: rgba(250,247,244,.92); backdrop-filter: blur(6px);
   padding: 14px 16px; border-bottom: 1px solid var(--line);
 }
-.subpage-header a { font-size: 30px; line-height: 1; padding: 4px 8px; }
-.subpage-header h1 { font-size: 24px; font-family: var(--serif); }
+.subpage-header a { font-size: 24px; line-height: 1; padding: 4px 8px; }
+.subpage-header h1 { font-size: 19.2px; font-family: var(--serif); }
 .profile-photo img { border-radius: 12px; }
-.profile-name { text-align: center; font-family: var(--serif); font-size: 30px; margin-top: 18px; }
-.profile-role { text-align: center; color: var(--accent); font-size: 19.5px; margin-top: 2px; }
-.profile-intro { text-align: center; white-space: pre-line; color: var(--ink-soft); font-size: 21px; margin-top: 14px; }
+.profile-name { text-align: center; font-family: var(--serif); font-size: 24px; margin-top: 18px; }
+.profile-role { text-align: center; color: var(--accent); font-size: 15.6px; margin-top: 2px; }
+.profile-intro { text-align: center; white-space: pre-line; color: var(--ink-soft); font-size: 16.8px; margin-top: 14px; }
 .contact-btns { display: flex; justify-content: center; gap: 10px; margin-top: 16px; }
 .contact-btns a {
-  padding: 9px 20px; border-radius: 999px; font-size: 19.5px;
+  padding: 9px 20px; border-radius: 999px; font-size: 15.6px;
   background: var(--card); border: 1px solid var(--line);
 }
 .parents-photo img { border-radius: 12px; margin-bottom: 18px; }
@@ -313,8 +313,8 @@ section + section { border-top: 1px solid var(--line); }
   text-align: center; background: var(--card); border: 1px solid var(--line);
   border-radius: 10px; padding: 16px 10px;
 }
-.parent-rel { margin-top: 10px; font-size: 19.5px; color: var(--accent); }
-.parent-name { font-size: 24px; font-family: var(--serif); }
+.parent-rel { margin-top: 10px; font-size: 15.6px; color: var(--accent); }
+.parent-name { font-size: 19.2px; font-family: var(--serif); }
 
 /* 스크롤 등장 애니메이션 */
 .fade-in { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
