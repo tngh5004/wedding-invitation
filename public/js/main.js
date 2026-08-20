@@ -17,11 +17,13 @@
   const parentsWrap = document.querySelector('.parents-line');
   parentsWrap.innerHTML = '';
   function parentsRow(p) {
-    const names = [p.father, p.mother]
+    const list = [p.father, p.mother]
       .filter((x) => x && x.name)
-      .map((x) => (x.deceased ? `故 ${x.name}` : x.name))
-      .join(' · ');
-    parentsWrap.appendChild(C.el('span', 'p-parents', names));
+      .map((x) => (x.deceased ? `故 ${x.name}` : x.name));
+    const parentsEl = C.el('span', 'p-parents', list.join(' · '));
+    // 부모가 한 분이면 열 중앙(두 분 이름 사이 정도)에 배치
+    if (list.length === 1) parentsEl.classList.add('single');
+    parentsWrap.appendChild(parentsEl);
     parentsWrap.appendChild(C.el('span', 'p-rel', `의 ${p.order}`));
     parentsWrap.appendChild(C.el('span', 'p-name', p.name));
   }

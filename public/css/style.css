@@ -107,6 +107,7 @@ section + section { border-top: 1px solid var(--line); }
   column-gap: 8px; row-gap: 10px;
 }
 .parents-line .p-parents { text-align: right; }
+.parents-line .p-parents.single { text-align: center; } /* 부모 한 분이면 열 중앙 배치 */
 .parents-line .p-rel { color: var(--ink-soft); font-size: 15.6px; text-align: center; }
 .parents-line .p-name { text-align: left; font-weight: 600; }
 .person-links { margin-top: 20px; display: flex; justify-content: center; gap: 12px; }
