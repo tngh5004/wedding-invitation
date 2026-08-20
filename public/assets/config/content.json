@@ -84,27 +84,27 @@
     ]
   },
   "cover": {
-    "photo": "assets/images/01.png"
+    "photo": "assets/images/01.jpg"
   },
   "gallery": [
     {
-      "src": "assets/images/02.png",
+      "src": "assets/images/02.jpg",
       "alt": "갤러리 사진 1"
     },
     {
-      "src": "assets/images/03.png",
+      "src": "assets/images/03.jpg",
       "alt": "갤러리 사진 2"
     },
     {
-      "src": "assets/images/04.png",
+      "src": "assets/images/04.jpg",
       "alt": "갤러리 사진 3"
     },
     {
-      "src": "assets/images/05.png",
+      "src": "assets/images/05.jpg",
       "alt": "갤러리 사진 4"
     },
     {
-      "src": "assets/images/06.png",
+      "src": "assets/images/06.jpg",
       "alt": "갤러리 사진 5"
     },
     {
@@ -120,13 +120,13 @@
       "alt": "갤러리 사진 8"
     },
     {
-      "src": "assets/images/01.png",
+      "src": "assets/images/01.jpg",
       "alt": "갤러리 사진 9"
     }
   ],
   "video": {
     "src": "",
-    "poster": "assets/images/01.png",
+    "poster": "assets/images/01.jpg",
     "title": "웨딩 영상"
   },
   "mapSketch": "assets/images/11.png",
@@ -166,6 +166,6 @@
   ],
   "ending": {
     "message": "저희 두 사람의 새로운 시작을\n축복해 주셔서 감사합니다.",
-    "photo": "assets/images/01.png"
+    "photo": "assets/images/01.jpg"
   }
 }
