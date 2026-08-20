@@ -108,20 +108,8 @@
       "alt": "갤러리 사진 5"
     },
     {
-      "src": "assets/images/07.png",
-      "alt": "갤러리 사진 6"
-    },
-    {
-      "src": "assets/images/08.png",
-      "alt": "갤러리 사진 7"
-    },
-    {
-      "src": "assets/images/09.png",
-      "alt": "갤러리 사진 8"
-    },
-    {
       "src": "assets/images/01.jpg",
-      "alt": "갤러리 사진 9"
+      "alt": "갤러리 사진 6"
     }
   ],
   "video": {
@@ -166,6 +154,6 @@
   ],
   "ending": {
     "message": "저희 두 사람의 새로운 시작을\n축복해 주셔서 감사합니다.",
-    "photo": "assets/images/01.jpg"
+    "photo": "assets/images/04.jpg"
   }
 }

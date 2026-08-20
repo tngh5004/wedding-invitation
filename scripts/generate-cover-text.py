@@ -12,13 +12,14 @@ OUT_SVG = os.path.join(ROOT, 'public/assets/images/cover-text.svg')
 
 # (텍스트, 폰트크기(px, @2x), 색상, 자간(em))
 LINES = [
-    ('김수호♥홍소연', 86, '#31352f', 0.10),
+    ('김수호♥홍소연', 69, '#31352f', 0.10),
+    ('두 사람, 결혼합니다', 58, '#31352f', 0.06),
     ('2026년 12월 19일 토요일 낮 12시', 50, '#7d837a', 0.02),
     ('경기교총웨딩하우스', 50, '#7d837a', 0.02),
 ]
 WIDTH = 860           # frame 430px 의 2배 (레티나)
 PAD_TOP, PAD_BOTTOM = 70, 84
-GAP = [26, 18]        # 줄1-2, 줄2-3 간격
+GAP = [22, 30, 18]    # 줄 사이 간격
 
 font = TTFont(FONT)
 cmap = font.getBestCmap()

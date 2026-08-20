@@ -73,6 +73,7 @@ section + section { border-top: 1px solid var(--line); }
   font-weight: 600;
   margin-bottom: 28px;
 }
+.greeting-title { font-weight: 400; } /* "소중한 분들을 초대합니다"는 일반 굵기 */
 
 /* ===== 커버 ===== */
 .cover { padding: 0; position: relative; }
